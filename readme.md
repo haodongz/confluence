@@ -7,6 +7,7 @@
 1. ./atlassian-confluence-6.8.0-x64.bin安装好以后需要配置下/atlassian/confluence/conf/server.xml在server.xml加入后面这一行 proxyName="haodongz.com" proxyPort="80"/>
  server.xml 在这个里面添加Confluence域名JIRA也是一样如下图
 ![server](server.jpg)
+
 ![install](confluence_install.jpg)
 2. 此时会出现授权码需要在网上搜索下载注册机如下图,把服务器ID填写到注册机破解
 ![serveri id](confluence_server_ID.jpg)
