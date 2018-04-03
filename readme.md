@@ -14,4 +14,4 @@
 ![key2](key2.jpg)
 4. 一定要吧Mysql 驱动放到cp  mysql-connector-java-5.1.46.jar  到/atlassian/confluence/confluence/WEB-INF/lib 这个目录下面然后重启confluence服务
 ![mysql](mysql.jpg)
-
+5. 配置完毕后看下server.xml配置文件里面有说明
