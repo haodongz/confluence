@@ -5,6 +5,7 @@
 4. wget https://downloads.mysql.com/archives/community/   下载mysql5.7.20版本
 # Install  confluence
 1. ./atlassian-confluence-6.8.0-x64.bin
+![install.jpg](confluence_install.jpg)
 2. 安装好以后需要配置下/atlassian/confluence/conf/server.xml在<Service name="Tomcat-Standalone">后面这一行 proxyName="haodongz.com" proxyPort="80"/> 因为这里nginx做了跳转到了80端口
 server.xml 在这个里面添加Confluence域名JIRA也是一样
 ![server1](server1.jpg)
