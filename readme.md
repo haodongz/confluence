@@ -14,4 +14,4 @@
 ![key1](key1.jpg)
 ![key2](key2.jpg)
 4. 一定要吧Mysql 驱动放到cp  mysql-connector-java-2.1.46*  到/atlassian/confluence/confluence/WEB-INF/lib 这个目录下面不然会提示Mysql驱动找不到然后重启下confluence服务
-![mysql](msyql.jpg)
+![mysql](mysql.jpg)
