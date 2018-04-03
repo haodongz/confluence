@@ -5,19 +5,9 @@
 3. wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.46.tar.gz 
 4. wget https://downloads.mysql.com/archives/community/
 # Install  confluence
-1. ./atlassian-confluence-6.8.0-x64.bin   安装好以后需要配置下/atlassian/confluence/conf/server.xml  
+1. ./atlassian-confluence-6.8.0-x64.bin   安装好以后需要配置下/atlassian/confluence/conf/server.xml  在server.xml加入后面这一行	 proxyName="haodongz.com" proxyPort="80"/>
+ server.xml 在这个里面添加Confluence 域名同理JIRA也是一样。
 
-server.xml 在这个里面添加Confluence 域名同理JIRA也是一样。
-
-
-2. 
-
-<Server port="8000" shutdown="SHUTDOWN" debug="0">
-    <Service name="Tomcat-Standalone">
-        <Connector port="8090" connectionTimeout="20000" redirectPort="8443"
-                maxThreads="48" minSpareThreads="10"
-                enableLookups="false" acceptCount="10" debug="0" URIEncoding="UTF-8"
-		 proxyName="haodongz.com" proxyPort="80"/>
 
 ![这是一个图片](confluence_install.jpg)
 
