@@ -13,3 +13,4 @@
  然后用注册机打开破解,破解完成后还需要上传到下载原文件的目录改成原来的名字就好了破解完成。
 ![key1](key1.jpg)
 ![key2](key2.jpg)
+4. 一定要吧Mysql 驱动放到cp  mysql-connector-java-3.1.46*  到/atlassian/confluence/confluence/WEB-INF/lib 这个目录下面不然会提示Mysql驱动找不到
