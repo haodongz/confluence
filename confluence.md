@@ -16,14 +16,14 @@
 ![mysql](mysql.jpg)
 5. 进入confluence用户管理授权信息查看授权信息是否破解成功
 ![shouquan](shouquan.png)
-6. confluence配置完毕后需要修改下/atlasian/confluence/conf/server.xml配置文件添加下当前confluence的域名我这里写的80端口因为做的nginx代理
+6. confluence配置完毕后需要修改下/atlasian/confluence/conf/server.xml配置文件添加下当前confluence的域名我这里写的443端口因为做的nginx代理https手机客户端可以使用confluence
 ```xml
 <Server port="8000" shutdown="SHUTDOWN" debug="0">
     <Service name="Tomcat-Standalone">
         <Connector port="8090" connectionTimeout="20000" redirectPort="8443"
                 maxThreads="48" minSpareThreads="10"
                 enableLookups="false" acceptCount="10" debug="0" URIEncoding="UTF-8"
-		proxyName="haodongz.com" proxyPort="80"/>
+		proxyName="haodongz" proxyPort="443" scheme="https"/>
 ```
 7. JIRA也是一样/atlassian/jira/conf/server.xml
 ```xml
@@ -43,7 +43,7 @@
                    acceptCount="100"
                    disableUploadTimeout="true"
                    bindOnInit="false"
-                   proxyName="haodongz.com" proxyPort="80"/>
+		   proxyName="haodongz.com" proxyPort="443" scheme="https"/>
 
         <!--
 ```
