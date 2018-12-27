@@ -1,11 +1,11 @@
-			confluence   5.10 迁移文档
-1.	/atlassian/application-data/confluence/backups    备份文件
-2.	/data/atlassian/application-data/confluence/attachments   图片文档存储目录
-		旧的备份只备份这两个就可以了,还原时候也是恢复这两个文件
-################################################################################################################################
-1.	/atlassian/application-data/confluence/restore/backup-2018_04_12.zip   迁移过来的备份文件放到新的这个目录
-2.	/atlassian/application-data/confluence/attachments     迁移过来的备份的图片文档放到这个目录 
-3.	安装的目录要给   chmod  -R 777 *  防止写不进去数据
-4. 	 恢复后数据然后把新的confluence 里面的高级配置远程API(XML-RPC与SOAP) 打✔️对号 这个是允许jira 吧数据推送到wiki的。然后两边做互信找到ApplicationLinks做confluence和jira的链接首先两边的通信ok
-5.	 /atlassian/jira/bin/setenv.sh  修改jvm内存  然后停止服务再重启生效。
-6.	所有操作完成后需要建立索引,找到内容索引建立索引.
+			confluence   5.10 数据恢复(不适大量数据恢复)
+1.	/atlassian/application-data/confluence/backups/    wiki  web 备份路径 
+	/atlassian/application-data/confluence/restore/backup-xxx.zip   迁移过来的备份文件放到这个目录web页面恢复.zip文件
+############################################
+			confluence   5.10 数据恢复(大量数据还原数据)
+2.	/data/atlassian/application-data/confluence/attachments   图片文档存储目录(1备份)
+	/data/atlassian/application-data/confluence/attachments   图片恢复(2恢复)
+ 	进入数据库然后删除原来的库新建一个库把库导入	
+3. 	 /data/atlassian/jira/bin/setenv.sh  修改jvm内存  然后停止服务再重启生效。
+	
+4.     备份还原后后需要建立索引,找到内容索引建立索引.
