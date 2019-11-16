@@ -58,7 +58,7 @@
                    maxThreads="48" minSpareThreads="10"
                    enableLookups="false" acceptCount="10" debug="0" URIEncoding="UTF-8"
                    protocol="org.apache.coyote.http11.Http11NioProtocol"
-                   scheme="http" proxyName="wiki.vipkid.com.cn" proxyPort="80"/>
+                   scheme="http" proxyName="www.haodongz.com" proxyPort="80"/>
 
 
         <!--
