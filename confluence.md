@@ -49,3 +49,9 @@
 ```
 
 8. 所有修改都需要重启服务才能生效/etc/init.d/jira  &&  /etc/init.d/confluence   &&  stop   start
+9. cd /data/atlassian/confluence/conf/server.xml
+	 <Connector port="8090" connectionTimeout="20000" redirectPort="8443"
+                   maxThreads="48" minSpareThreads="10"
+                   enableLookups="false" acceptCount="10" debug="0" URIEncoding="UTF-8"
+                   protocol="org.apache.coyote.http11.Http11NioProtocol"
+                   scheme="http" proxyName="www.haodongz.com" proxyPort="80"/>
