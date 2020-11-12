@@ -5,7 +5,6 @@
 4. wget https://downloads.mysql.com/archives/community/   下载mysql5.7.20版本
 # Install  confluence
 1. ./atlassian-confluence-6.8.0-x64.bin
-![Image text] (confluence_install.jpg)
 2. 此时会出现授权码需要在网上搜索下载注册机如下图,把服务器ID填写到注册机破解
 3. 进到confluence安装目录/atlassian/confluence/confluence/WEB-INF/lib/atlassian-extras-decoder-v2-3.3.0.jar把这个软件包下载到本地修改成atlassian-extras-2.4.jar
  然后用注册机打开破解,破解完成后还需要上传到下载原文件的目录改成原来的名字就好了破解完成
